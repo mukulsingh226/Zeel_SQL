@@ -90,6 +90,26 @@ values
 (1016, "DEF", 9987876567 ); 
 
 
+# --- Auto Increment
+
+alter table customer_details modify ID int auto_increment;
+
+
+insert into customer_details
+(Customer_Name, Contact_No)
+values
+("IJK", 7554952284);
+
+
+# -- Alias
+
+select ID as Customer_ID, Customer_Name, Contact_No from customer_details;
+
+
+
+
+
+
 
 
 
