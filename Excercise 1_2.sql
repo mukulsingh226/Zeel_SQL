@@ -77,7 +77,7 @@ select * from employee where Designation = "Probation";
 select * from employee where Emp_ID = 101;
 select Emp_Name, Emp_ID as Employee_ID from employee where Emp_ID = 101;
 
-update employee set Dept = "Car Loan" where Emp_Name = "Rahul";
+update employee set Dept = "Car Loan" where Emp_ID = 103;
 
 delete from employee where Emp_Name = "Anurag"; 
 
