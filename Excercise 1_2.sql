@@ -55,6 +55,32 @@ select * from employee;
 select Emp_ID, Emp_Name as Employee_Name from employee;
 
 
+# -- Exercise 2
+
+/*
+1. Display those employees data who are in probation
+
+2. Display all data of Emp_ID 101 
+
+3. Display only ID number and name of Emp_1D 101 ID 
+
+# Update
+4. Change the Department of Emp_1D = 103
+
+# Delete
+delete anurag data
+
+*/
+
+
+select * from employee where Designation = "Probation";
+select * from employee where Emp_ID = 101;
+select Emp_Name, Emp_ID as Employee_ID from employee where Emp_ID = 101;
+
+update employee set Dept = "Car Loan" where Emp_Name = "Rahul";
+
+delete from employee where Emp_Name = "Anurag"; 
+
 
 
 
