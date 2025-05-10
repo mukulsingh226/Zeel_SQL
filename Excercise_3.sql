@@ -42,5 +42,6 @@ select emp_id, emp_name from employee;
 
 select concat(Left (dept , 1), emp_id ), emp_name from employee;
 
+#
 
 
