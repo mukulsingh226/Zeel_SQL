@@ -47,8 +47,18 @@ select distinct Department from employee_insurance;
 select distinct City from employee_insurance;
 
 
+alter table employee_insurance add column Salary int not null;
 
 
+select * from employee_insurance;
+
+update employee_insurance set Salary = 65000 where Emp_ID = 5001;
+
+update employee_insurance set Salary = 85000 where Emp_ID = 5002;
+update employee_insurance set Salary = 125000 where Emp_ID = 5003;
+update employee_insurance set Salary = 40000 where Emp_ID = 5004;
+update employee_insurance set Salary = 165000 where Emp_ID = 5005;
+select Emp_ID, Emp_FName, Department, Salary from employee_insurance order by Salary;
 
 
 
