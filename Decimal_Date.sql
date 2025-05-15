@@ -22,7 +22,6 @@ insert into Goods_Info
 values
 ("6224", "Adidas Football Shoe", 1800.00);
 
-
 insert into Goods_Info
 values
 ("6224", "Adidas Football Shoe", 1800.00);
@@ -30,6 +29,8 @@ values
 insert into Goods_Info
 values
 ("1055", "MU Jersey", 999.000);
+
+
 
 
 create table float_double
@@ -41,13 +42,11 @@ values
 
 insert into float_double 
 values
-(223.456789, 223.45678911);
+(123.123456789, 123.12345678901234);
 
 delete from float_double where f = 123.457;
 
 select * from float_double;
-
-truncate table float_double;
 
 
 
