@@ -31,8 +31,6 @@ values
 ("1055", "MU Jersey", 999.000);
 
 
-
-
 create table float_double
 (f float, d double);
 
@@ -47,7 +45,3 @@ values
 delete from float_double where f = 123.457;
 
 select * from float_double;
-
-
-
-
