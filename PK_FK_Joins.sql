@@ -83,11 +83,50 @@ values
 select * from Customer, Orders;
 
 
+# -- Left Join
+
+/*
+The LEFT JOIN keyword returns all records from the left table (table1), and the matching records (if any) from the right table (table2).
+*/
+
+
 select * from Customer
 left join 
 Orders
 on 
 Customer.Cust_ID = Orders.Cust_ID;
 
+
+# -- Right Join
+
+/*
+The RIGHT JOIN keyword returns all records from the right table (table2),
+and the matching records (if any) from the left table (table1).
+*/
+
+
+select * from customer
+right join
+orders
+on
+Customer.Cust_ID = Orders.Cust_ID;
+
+#--4 . Cross Joins
+
+/*
+In MySQL, a CROSS JOIN, also known as a Cartesian join, 
+
+combines every row from one table with every row from another table. 
+This creates a result set where each row in the first table is paired with every row in the second table, 
+resulting in a large number of rows. Unlike other join types (like INNER JOIN), 
+CROSS JOIN doesn't require a condition or matching column between tables; 
+it simply returns all possible combinations. 
+*/
+
+select * from Customer
+cross join 
+Orders
+on 
+Customer.Cust_ID = Orders.Cust_ID;
 
 
