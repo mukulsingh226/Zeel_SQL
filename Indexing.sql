@@ -26,7 +26,6 @@ use SBI;
 select * from employee;
 select * from employee_insurance;
 
-
 /*TO know which data was inserted at last through EMP_ID*/
 
 SELECT * FROM employee_insurance
@@ -41,6 +40,9 @@ create index Last_Name
 on
 employee_insurance(Emp_ID, Emp_LName);
 
+/*Calling Index*/
+
+show index from employee_insurance;
 show index from employee_insurance from SBI;
 
-select Emp_LName from employee_insurance;
+show indexes from employee_insurance;
